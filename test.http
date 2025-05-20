@@ -1,0 +1,26 @@
+@LOCAL = http://localhost:3000
+
+POST {{LOCAL}}/add-car
+Content-Type: application/json
+
+{
+    "name": "박기정", 
+    "carNumber": 2063,
+    "phoneNumber": "01099999999"
+}
+
+### Get all cars
+GET {{LOCAL}}/cars
+
+### Update a car entry
+PUT {{LOCAL}}/cars/YOUR_PAGE_ID_HERE
+Content-Type: application/json
+
+{
+    "name": "박기정", 
+    "carNumber": 2064,
+    "phoneNumber": "01088888888"
+}
+
+### Delete a car entry
+DELETE {{LOCAL}}/cars/YOUR_PAGE_ID_HERE
