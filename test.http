@@ -5,22 +5,33 @@ Content-Type: application/json
 
 {
     "name": "박기정", 
-    "carNumber": 2063,
-    "phoneNumber": "01099999999"
+    "carNumber": 2064,
+    "phoneNumber": "01099999999",
+    "imageUrl": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1000&auto=format&fit=crop"
 }
 
 ### Get all cars
 GET {{LOCAL}}/cars
 
+### Get car by number
+GET {{LOCAL}}/cars/number/2064
+
+### Get car by phone number
+GET {{LOCAL}}/cars/phone/01088888888
+
+### Get car by name
+GET {{LOCAL}}/cars/name/박기정
+
 ### Update a car entry
-PUT {{LOCAL}}/cars/YOUR_PAGE_ID_HERE
+PUT {{LOCAL}}/cars/1f8936f8-d728-809c-bff2-edef363125e9
 Content-Type: application/json
 
 {
     "name": "박기정", 
     "carNumber": 2064,
-    "phoneNumber": "01088888888"
+    "phoneNumber": "01088888888",
+    "imageUrl": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1000&auto=format&fit=crop"
 }
 
 ### Delete a car entry
-DELETE {{LOCAL}}/cars/YOUR_PAGE_ID_HERE
+DELETE {{LOCAL}}/cars/1f9936f8-d728-8164-b4cd-e85565b826ff
